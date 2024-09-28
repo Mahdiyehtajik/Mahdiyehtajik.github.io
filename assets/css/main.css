@@ -2791,11 +2791,12 @@ input, select, textarea {
 	ul.contact {
 		list-style: none;
 		padding: 0;
+		display: flex;
+		gap: 50px;
 	}
 
 		ul.contact > li {
 			padding: 0;
-			margin: 1.5em 0 0 0;
 		}
 
 			ul.contact > li:first-child {
@@ -2905,11 +2906,7 @@ input, select, textarea {
 			width: calc(50% - 2.5em);
 		}
 
-		.split > :nth-child(2n - 1) {
-			padding-right: 2.5em;
-			border-right: solid 1px rgba(255, 255, 255, 0.15);
-		}
-
+	
 		.split > :nth-child(2n) {
 			padding-left: 2.5em;
 		}
@@ -3258,7 +3255,9 @@ input, select, textarea {
 		.wrapper.style3 {
 			background-color: #b74e91;
 		}
-
+.wrapper.style-new{
+	background-color: #8f4eb7;
+}
 		.wrapper.style3-alt {
 			background-color: #953d75;
 		}
