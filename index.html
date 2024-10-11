@@ -126,47 +126,88 @@
 				</section>
 
 				<!-- one -->
-				<section id="one" class="wrapper style3 fade-up">
-					<div class="inner">
+				import React from 'react';
+				import { ExternalLink, Code, GameController, Brain } from 'lucide-react';
+				
+				const ProjectsSection = () => {
+				  const projects = [
+					{
+					  title: "Mahdiyehtajik.github.io",
+					  description: "Personal portfolio website built with CSS",
+					  icon: <Code className="w-8 h-8 mb-4 text-blue-500" />,
+					  link: "https://github.com/Mahdiyehtajik/Mahdiyehtajik.github.io",
+					  tech: "CSS"
+					},
+					{
+					  title: "Recommender System",
+					  description: "Collaborative Filtering and RFM Model based recommender system",
+					  icon: <Brain className="w-8 h-8 mb-4 text-purple-500" />,
+					  link: "https://github.com/Mahdiyehtajik/Recommender-System-Based-on-Collaborative-Filtering-and-RFM-Model",
+					  tech: "Python"
+					},
+					{
+					  title: "BlockEscapeGame",
+					  description: "An interactive block escape game implementation",
+					  icon: <GameController className="w-8 h-8 mb-4 text-green-500" />,
+					  link: "https://github.com/Mahdiyehtajik/BlockEscapeGame",
+					  tech: "Python"
+					},
+					{
+					  title: "Future Project 1",
+					  description: "Coming soon",
+					  icon: <Code className="w-8 h-8 mb-4 text-gray-500" />,
+					  link: "#",
+					  tech: "TBD"
+					},
+					{
+					  title: "Future Project 2",
+					  description: "Coming soon",
+					  icon: <Code className="w-8 h-8 mb-4 text-gray-500" />,
+					  link: "#",
+					  tech: "TBD"
+					},
+					{
+					  title: "Future Project 3",
+					  description: "Coming soon",
+					  icon: <Code className="w-8 h-8 mb-4 text-gray-500" />,
+					  link: "#",
+					  tech: "TBD"
+					}
+				  ];
+				
+				  return (
+					<section id="five" className="wrapper style2 spotlights">
+					  <div className="inner">
 						<h2>Projects</h2>
-						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-						<div class="features">
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Lorem ipsum amet</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+						<p>Explore my GitHub repositories and personal projects. Click on any project to view its source code and documentation.</p>
+						<div className="features">
+						  {projects.map((project, index) => (
+							<section key={index}>
+							  <a 
+								href={project.link} 
+								target="_blank" 
+								rel="noopener noreferrer"
+								className="icon-link"
+							  >
+								<span className="icon major">
+								  {project.icon}
+								</span>
+								<h3>{project.title}</h3>
+								<p>{project.description}</p>
+								<div className="tech-info">
+								  <span className="tech-label">{project.tech}</span>
+								  <ExternalLink className="external-icon" />
+								</div>
+							  </a>
 							</section>
-							<section>
-								<span class="icon solid major fa-cog"></span>
-								<h3>Aliquam sed nullam</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-cog"></span>
-								<h3>Sed erat ullam corper</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-desktop"></span>
-								<h3>Veroeros quis lorem</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon solid major fa-link"></span>
-								<h3>Urna quis bibendum</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
-							<section>
-								<span class="icon major fa-gem"></span>
-								<h3>Aliquam urna dapibus</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-							</section>
+						  ))}
 						</div>
-						<ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul>
-					</div>
-				</section>
+					  </div>
+					</section>
+				  );
+				};
+				
+				export default ProjectsSection;
 
 				<!-- Two -->
 					<section id="two" class="wrapper style2 spotlights">
