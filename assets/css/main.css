@@ -2444,7 +2444,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #8c70af;
+			color: #10051e;
 			content: '\f00c';
 		}
 
@@ -3253,7 +3253,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #0d95b0;
+			background-color: #6d36c5;
 		}
 .wrapper.style-new{
 	background-color: #744d8b;
