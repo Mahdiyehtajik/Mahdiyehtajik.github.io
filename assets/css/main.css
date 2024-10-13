@@ -2552,7 +2552,7 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #100320;
+					color: #10051e;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -2663,8 +2663,6 @@ input, select, textarea {
 		dl dd {
 			margin-left: 2em;
 		}
-
-/* Actions */
 
 /* Actions */
 ul.actions {
@@ -2780,65 +2778,47 @@ ul.actions li > *:hover {
 }
 
 /* Contact */
-ul.contact {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-ul.contact > li {
-    padding: 0;
-    transition: all 0.3s ease;
-}
+	ul.contact {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 50px;
+	}
 
-ul.contact > li:hover {
-    transform: scale(1.05);
-}
+		ul.contact > li {
+			padding: 0;
+		}
 
-ul.contact > li:first-child {
-    margin-top: 0;
-}
+			ul.contact > li:first-child {
+				margin-top: 0;
+			}
 
 /* Icons */
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
-ul.icons li {
-    display: inline-block;
-    padding: 0;
-}
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
 
-ul.icons li > a,
-ul.icons li > span {
-    border: 0;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: #f0f0f0;
-    transition: all 0.3s ease;
-}
+		ul.icons li {
+			display: inline-block;
+			padding: 0 0.75em 0 0;
+		}
 
-ul.icons li > a:hover,
-ul.icons li > span:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+			ul.icons li:last-child {
+				padding-right: 0;
+			}
 
-ul.icons li > a .label,
-ul.icons li > span .label {
-    display: none;
-}
+			ul.icons li > a, ul.icons li > span {
+				border: 0;
+			}
+
+				ul.icons li > a .label, ul.icons li > span .label {
+					display: none;
+				}
+
 /* Menu */
 
 	ul.menu {
@@ -3264,10 +3244,10 @@ ul.icons li > span .label {
 		}
 
 		.wrapper.style3 {
-			background-color: #6d36c5;
+			background-color: #71478a;
 		}
 .wrapper.style-new{
-	background-color: #744d8b;
+	background-color: #71478a;
 }
 		.wrapper.style3-alt {
 			background-color: #8c70af;
