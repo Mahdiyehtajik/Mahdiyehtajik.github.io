@@ -3059,6 +3059,9 @@ ul.actions li > *:hover {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 
+		.spotlights > section:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.2); 
+		}
 		.spotlights > section.inactive > .image:before,
 		body.is-preload .spotlights > section > .image:before {
 			opacity: 1;
